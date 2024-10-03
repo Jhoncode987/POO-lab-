@@ -1,0 +1,15 @@
+@startuml
+interface FiguraGeometrica{
+    + calculadoraArea(): double
+    + calculadoraPerimetro(): double
+}
+abstract class FiguraConLados implements FiguraGeometrica{
+    - numLados: int
+    + FiguraConLados(numLados): int
+    (abstract) + calculadoraArea(): double
+    (abstract) + calculadoraPerimetro(): double
+}
+class Triangulo extends FiguraConLados{
+
+}
+@enduml

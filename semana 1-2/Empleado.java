@@ -1,21 +1,21 @@
 public class Empleado {
     private String nombre;
-    private double salario; // Atributo privado, accesible solo dentro de la clase
+    private double salario;
     private String departamento;
 
-    // Constructor
+
     public Empleado(String nombre, double salario, String departamento) {
         this.nombre = nombre;
         this.salario = salario;
         this.departamento = departamento;
-    }
+        }
 
-    // Método para acceder al salario de manera controlada (getter)
+
     public double getSalario() {
         return this.salario;
-    }
+        }
 
-    // Método para modificar el salario de manera controlada (setter)
+
     public void setSalario(double nuevoSalario) {
         if (nuevoSalario > 0) {
             this.salario = nuevoSalario;
@@ -24,7 +24,7 @@ public class Empleado {
         }
     }
 
-    // Método para mostrar la información del empleado
+
     public void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Departamento: " + departamento);
